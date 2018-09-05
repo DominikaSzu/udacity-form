@@ -7,6 +7,7 @@
     <title>Quiz - One Big, Ugly Form</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -17,9 +18,9 @@
     <section class="progress-bar">
         <progress value="0" max="100" id="progress"></progress>
     </section>
-    
+
     <form class="form">
-        <fieldset>
+        <fieldset class="general-info">
             <h3>Your Name and Demographic Information</h3>
             <label for="first-name">First Name
       <input id="first-name" type="text" autocomplete="on">
@@ -44,93 +45,93 @@
       <input id ="mailing-list" class="inline" type="checkbox">
     </label>
         </fieldset>
-        <fieldset>
-        <h3>Your Shipping Address</h3>
-        <label>First Name
+        <fieldset class="shipping-address">
+            <h3>Your Shipping Address</h3>
+            <label>First Name
       <input type="text">
     </label>
-        <label>Last Name
+            <label>Last Name
       <input type="text">
     </label>
-        <label>Company
+            <label>Company
       <input type="text" autocomplete="on">
     </label>
-        <label>Address Line 1
+            <label>Address Line 1
       <input type="text" autocomplete="on">
     </label>
-        <label>Address Line 2
+            <label>Address Line 2
       <input type="text" autocomplete="on">
     </label>
-        <label>City
+            <label>City
       <input type="text" autocomplete="on">
     </label>
-        <label>State/Province
+            <label>State/Province
       <input type="text" autocomplete="on">
     </label>
-        <label>Postal Code
+            <label>Postal Code
       <input type="text" autocomplete="on">
     </label>
-        <label>Country
+            <label>Country
       <input type="text" autocomplete="on">
     </label>
-</fieldset>
-       <fieldset>
-        <h3>Your Credit Card Information</h3>
-        <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
-        <label>Credit Card Number
+        </fieldset>
+        <fieldset class="payment-info">
+            <h3>Your Credit Card Information</h3>
+            <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
+            <label>Credit Card Number
       <input type="text" autocomplete="on">
     </label>
-        <p>Credit Card Type</p>
-        <label for="visa">
+            <p>Credit Card Type</p>
+            <label for="visa">
       <input id="visa" type="radio" class="inline"> Visa
     </label>
-        <label for="american-express">  
+            <label for="american-express">  
       <input id="american-express" type="radio" class="inline"> American Express
     </label>
-        <label for="mastercard">
+            <label for="mastercard">
       <input id="mastercard" type="radio" class="inline"> Mastercard
     </label>
-        <label for="discover">  
+            <label for="discover">  
       <input id="discover" type="radio" class="inline"> Discover
     </label>
 
-        <label>Expiration Date
+            <label>Expiration Date
       <input type="number" placeholder="MM" min="1" max="12"><input type="number" placeholder="YY" min="2018" max="2030">
     </label>
-        <label>CVV
+            <label>CVV
       <input type="number">
     </label>
-</fieldset>
-       <fieldset>
-        <h3>Your Billing Address</h3>
-        <label>First Name
+        </fieldset class="billing-address">
+        <fieldset>
+            <h3>Your Billing Address</h3>
+            <label>First Name
       <input type="text">
     </label>
-        <label>Last Name
+            <label>Last Name
       <input type="text">
     </label>
-        <label>Company
+            <label>Company
       <input type="text">
     </label>
-        <label>Address Line 1
+            <label>Address Line 1
       <input type="text">
     </label>
-        <label>Address Line 2
+            <label>Address Line 2
       <input type="text">
     </label>
-        <label>City
+            <label>City
       <input type="text">
     </label>
-        <label>State/Province
+            <label>State/Province
       <input type="text">
     </label>
-        <label>Postal Code
+            <label>Postal Code
       <input type="text">
     </label>
-        <label>Country
+            <label>Country
       <input type="text">
     </label>
-    </fieldset>
+        </fieldset>
     </form>
 
     <section class="order-review">
@@ -164,13 +165,6 @@
     </label>
         <input id="submit" type="submit">
     </section>
-    <script>
-        var submit = document.querySelector('#submit');
-        submit.onclick = function() {
-            alert("All of your information was valid, right? I'll just go ahead and assume that it is ;)\n\nThanks for your submission!");
-        };
-
-    </script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ header {
   height: 50px;
   background: #9cf;
   min-width: 100%;
-  padding: 0px 10px;
+  padding: 0px 0px 0px 10px;
   font-size: 2em;
 }
 
@@ -79,6 +79,7 @@ label {
 }
 
 .progress-bar {
+  padding: 0; 
   position: fixed;
   margin-top: 50px;
   width: 100%;
@@ -135,4 +136,8 @@ tr:nth-child(even) {
 
 .check-correct {
   margin-top: 10px;
+}
+
+.general-info {
+    padding-top: 100px;
 }
