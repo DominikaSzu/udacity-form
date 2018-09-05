@@ -17,10 +17,19 @@ header {
   font-size: 2em;
 }
 
+.general-info {
+    padding-top: 100px;
+}
+
 @media screen and (max-width: 650px) {
   header {
     font-size: 1.5em;
   }
+    
+    .general-info {
+    padding-top: 50px;
+}
+    
 
   .progress-bar {
     display: none;
@@ -35,7 +44,6 @@ header {
   .company-page {
     display: none;
   }
-
   .company-name {
     display: block;
     width: 230px;
@@ -136,8 +144,4 @@ tr:nth-child(even) {
 
 .check-correct {
   margin-top: 10px;
-}
-
-.general-info {
-    padding-top: 100px;
 }
