@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz - One Big, Ugly Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header>
+        <span class="company-name">🂡 Cam's Company 🂡</span>
+        <span class="company-page">Checkout Page</span>
+    </header>
+    <section class="progress-bar">
+        <progress value="0" max="100" id="progress"></progress>
+    </section>
+    
+    <form class="form">
+        <fieldset>
+            <h3>Your Name and Demographic Information</h3>
+            <label for="first-name">First Name
+      <input id="first-name" type="text" autocomplete="on">
+    </label>
+            <label for="last-name">Last Name
+      <input id="last-name" type="text" autocomplete="on">
+    </label>
+            <label for="age">Age
+      <input id="age" type="text" autocomplete="on">
+    </label>
+            <p>Gender</p>
+            <label for="female">
+      <input type="radio" class="inline"> Female
+    </label>
+            <label for="male">  
+      <input id="male" type="radio" class="inline"> Male
+    </label>
+            <label for="email">Email Address
+      <input id="email" type="text" autocomplete="on">
+    </label>
+            <label for="mailing-list">Put me on the mailing list?
+      <input id ="mailing-list" class="inline" type="checkbox">
+    </label>
+        </fieldset>
+        <fieldset>
+        <h3>Your Shipping Address</h3>
+        <label>First Name
+      <input type="text">
+    </label>
+        <label>Last Name
+      <input type="text">
+    </label>
+        <label>Company
+      <input type="text" autocomplete="on">
+    </label>
+        <label>Address Line 1
+      <input type="text" autocomplete="on">
+    </label>
+        <label>Address Line 2
+      <input type="text" autocomplete="on">
+    </label>
+        <label>City
+      <input type="text" autocomplete="on">
+    </label>
+        <label>State/Province
+      <input type="text" autocomplete="on">
+    </label>
+        <label>Postal Code
+      <input type="text" autocomplete="on">
+    </label>
+        <label>Country
+      <input type="text" autocomplete="on">
+    </label>
+</fieldset>
+       <fieldset>
+        <h3>Your Credit Card Information</h3>
+        <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
+        <label>Credit Card Number
+      <input type="text" autocomplete="on">
+    </label>
+        <p>Credit Card Type</p>
+        <label for="visa">
+      <input id="visa" type="radio" class="inline"> Visa
+    </label>
+        <label for="american-express">  
+      <input id="american-express" type="radio" class="inline"> American Express
+    </label>
+        <label for="mastercard">
+      <input id="mastercard" type="radio" class="inline"> Mastercard
+    </label>
+        <label for="discover">  
+      <input id="discover" type="radio" class="inline"> Discover
+    </label>
+
+        <label>Expiration Date
+      <input type="number" placeholder="MM" min="1" max="12"><input type="number" placeholder="YY" min="2018" max="2030">
+    </label>
+        <label>CVV
+      <input type="number">
+    </label>
+</fieldset>
+       <fieldset>
+        <h3>Your Billing Address</h3>
+        <label>First Name
+      <input type="text">
+    </label>
+        <label>Last Name
+      <input type="text">
+    </label>
+        <label>Company
+      <input type="text">
+    </label>
+        <label>Address Line 1
+      <input type="text">
+    </label>
+        <label>Address Line 2
+      <input type="text">
+    </label>
+        <label>City
+      <input type="text">
+    </label>
+        <label>State/Province
+      <input type="text">
+    </label>
+        <label>Postal Code
+      <input type="text">
+    </label>
+        <label>Country
+      <input type="text">
+    </label>
+    </fieldset>
+    </form>
+
+    <section class="order-review">
+        <h3>Your Order</h3>
+        <table class="your-order">
+            <tr class="headings">
+                <td>Product</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td>Game Console 2015</td>
+                <td>1</td>
+                <td>$500.00</td>
+                <td>$500.00</td>
+            </tr>
+            <tr>
+                <td>Platformer Bros 3D</td>
+                <td>1</td>
+                <td>$50.00</td>
+                <td>$50.00</td>
+            </tr>
+            <tr class="total">
+                <td>Total</td>
+                <td>$550.00</td>
+            </tr>
+        </table>
+        <label class="check-correct">Is your order correct?
+      <input type="checkbox">
+    </label>
+        <input id="submit" type="submit">
+    </section>
+    <script>
+        var submit = document.querySelector('#submit');
+        submit.onclick = function() {
+            alert("All of your information was valid, right? I'll just go ahead and assume that it is ;)\n\nThanks for your submission!");
+        };
+
+    </script>
+</body>
+
+</html>
