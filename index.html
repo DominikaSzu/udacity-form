@@ -23,23 +23,23 @@
         <fieldset class="general-info">
             <h3>Your Name and Demographic Information</h3>
             <label for="first-name">First Name
-      <input id="first-name" type="text" autocomplete="on">
+      <input id="first-name" type="text" autocomplete="on" class="text-input">
     </label>
             <label for="last-name">Last Name
-      <input id="last-name" type="text" autocomplete="on">
+      <input id="last-name" type="text" autocomplete="on" class="text-input">
     </label>
             <label for="age">Age
-      <input id="age" type="text" autocomplete="on">
+      <input id="age" type="text" autocomplete="on" class="text-input">
     </label>
             <p>Gender</p>
             <label for="female">
-      <input type="radio" class="inline"> Female
+      <input type="radio" class="inline" name="gender"> Female
     </label>
             <label for="male">  
-      <input id="male" type="radio" class="inline"> Male
+      <input id="male" type="radio" class="inline" name="gender"> Male
     </label>
             <label for="email">Email Address
-      <input id="email" type="text" autocomplete="on">
+      <input id="email" type="text" autocomplete="on" class="text-input">
     </label>
             <label for="mailing-list">Put me on the mailing list?
       <input id ="mailing-list" class="inline" type="checkbox">
@@ -48,88 +48,88 @@
         <fieldset class="shipping-address">
             <h3>Your Shipping Address</h3>
             <label>First Name
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Last Name
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Company
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Address Line 1
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Address Line 2
       <input type="text" autocomplete="on">
     </label>
             <label>City
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>State/Province
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Postal Code
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Country
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
         </fieldset>
         <fieldset class="payment-info">
             <h3>Your Credit Card Information</h3>
             <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
             <label>Credit Card Number
-      <input type="text" autocomplete="on">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <p>Credit Card Type</p>
             <label for="visa">
-      <input id="visa" type="radio" class="inline"> Visa
+      <input id="visa" type="radio" class="inline" name="card"> Visa
     </label>
             <label for="american-express">  
-      <input id="american-express" type="radio" class="inline"> American Express
+      <input id="american-express" type="radio" class="inline" name="card"> American Express
     </label>
             <label for="mastercard">
-      <input id="mastercard" type="radio" class="inline"> Mastercard
+      <input id="mastercard" type="radio" class="inline" name="card"> Mastercard
     </label>
             <label for="discover">  
-      <input id="discover" type="radio" class="inline"> Discover
+      <input id="discover" type="radio" class="inline" name="card"> Discover
     </label>
 
             <label>Expiration Date
-      <input type="number" placeholder="MM" min="1" max="12"><input type="number" placeholder="YY" min="2018" max="2030">
+      <input type="number" placeholder="MM" min="1" max="12"  autocomplete="on"><input type="number" placeholder="YY" min="2018" max="2030" autocomplete="on">
     </label>
             <label>CVV
-      <input type="number">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
         </fieldset>
         <fieldset class="billing-address">
             <h3>Your Billing Address</h3>
             <label>First Name
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Last Name
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Company
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Address Line 1
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Address Line 2
-      <input type="text">
+      <input type="text" autocomplete="on">
     </label>
             <label>City
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>State/Province
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Postal Code
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
             <label>Country
-      <input type="text">
+      <input type="text" autocomplete="on" class="text-input">
     </label>
         </fieldset>
     </form>
