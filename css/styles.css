@@ -149,3 +149,8 @@ tr:nth-child(even) {
 .hide-it {
     display: none;
 }
+
+.off-view {
+    margin-left: -1000px;
+    position: absolute;
+}
