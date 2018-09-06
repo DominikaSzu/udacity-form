@@ -145,3 +145,7 @@ tr:nth-child(even) {
 .check-correct {
   margin-top: 10px;
 }
+
+.hide-it {
+    display: none;
+}

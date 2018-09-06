@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const paymentInfo = document.querySelector('.payment-info'); const billingAddress = document.querySelector('.billing-address');
     let progressBar = document.querySelector('#progress');  
     let submitButton = document.querySelector('#submit');
+    let allTextInputs = Array.from(document.getElementsByClassName('text-input'));
+    console.log(allTextInputs) 
+    const sameBillingAddressBtn = document.querySelector('#same-billing-address');
     
 //    Event listeners to mark the progress on progress bar
     
@@ -26,15 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
 //    Validation of inserted data
     
-    let allTextInputs = Array.from(document.getElementsByClassName('text-input'));
-    console.log(allTextInputs)    
-    
     submitButton.addEventListener('click', function() {
         allTextInputs.forEach((textInput) => {
             console.log(textInput.value)
-
+//        if (textInput.value !== '') {
+//            textInput.setCustomValidity('');
+//        } else {
+//            textInput.setCustomValidity('You need to fill it :)');
+//        }
     })
     })
     
+//    Show fieldset for different billing address if needed
+    
+    sameBillingAddressBtn.addEventListener('change', function() {
+        billingAddress.classList.toggle('hide-it');
+    });
     
 });
