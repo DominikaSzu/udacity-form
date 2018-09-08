@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let progressBar = document.querySelector('#progress');  
     let submitButton = document.querySelector('#submit');
     let allTextInputs = Array.from(document.getElementsByClassName('text-input'));
-    console.log(allTextInputs) 
     const sameBillingAddressBtn = document.querySelector('#same-billing-address');
     
 //    Event listeners to mark the progress on progress bar
