@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let submitButton = document.querySelector('#submit');
     let allTextInputs = Array.from(document.getElementsByClassName('text-input'));
     const sameBillingAddressBtn = document.querySelector('#same-billing-address');
+    const cardNumberInput = document.querySelector('#card-number-input');
     
 //    Event listeners to mark the progress on progress bar
     
@@ -27,16 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
 //    Validation of inserted data
-    
-    submitButton.addEventListener('click', function() {
-        allTextInputs.forEach((textInput) => {
-            console.log(textInput.value)
-//        if (textInput.value !== '') {
-//            textInput.setCustomValidity('');
-//        } else {
-//            textInput.setCustomValidity('You need to fill it :)');
-//        }
-    })
+
+    submitButton.addEventListener('click', function(event) {
+
+        let cardNr = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+        if (cardNumberInput.value.match(cardNr)) {
+            cardNumberInput.setCustomValidity('');
+        } else {
+            cardNumberInput.setCustomValidity('Please insert your credit card number');
+            console.log('no')
+        }
     })
     
 //    Show fieldset for different billing address if needed

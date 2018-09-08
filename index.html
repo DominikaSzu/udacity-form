@@ -79,7 +79,8 @@
             <h3>Your Credit Card Information</h3>
             <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
             <label><span class="off-view">Credit Card Number</span>
-      <input type="text" autocomplete="on" class="text-input" placeholder="Credit Card Number">
+      <input type="text" autocomplete="on" class="text-input" placeholder="Credit Card Number" id="card-number-input" required>      
+<!--      <input type="text" pattern="[0-9]{13,16}" autocomplete="on" class="text-input" placeholder="Credit Card Number" id="card-number-input" required>-->
     </label>
             <p>Credit Card Type</p>
             <label for="visa">
@@ -135,7 +136,7 @@
       <input type="text" autocomplete="on" class="text-input" placeholder="Country">
     </label>
         </fieldset>
-    </form>
+    
 
     <section class="order-review">
         <h3>Your Order</h3>
@@ -168,6 +169,7 @@
     </label>
         <input id="submit" type="submit">
     </section>
+    </form>
 </body>
 
 </html>
