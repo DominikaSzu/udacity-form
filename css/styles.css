@@ -1,7 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0px 0px 10px 0px;
-    width: 100vw;
+  width: 100vw;
+  color: #49274A;
 }
 
 .inline {
@@ -12,15 +13,20 @@ header {
   position: fixed;
   display: block;
   height: 50px;
-  background: #9cf;
+  background: #49274A;
   min-width: 100%;
   padding: 0px 0px 0px 10px;
   font-size: 2em;
   top: 0;
+  color: #f8eee7;
 }
 
 #progress {
     min-width: 40vw;
+}
+
+section.progress-bar {
+    background-color: #f8eee7;
 }
 
 form, section.order-review {
@@ -37,8 +43,8 @@ form {
     padding-top: 110px
 }
 
-form fieldset:nth-child(1) {
-    
+fieldset {
+    background-color:  #f8eee7;
 }
 
 @media screen and (max-width: 650px) {
@@ -160,7 +166,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #eee;
+  background-color: #f4decb;
 }
 
 .check-correct {
